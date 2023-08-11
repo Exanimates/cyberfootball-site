@@ -2,7 +2,7 @@
     <div id="app">
       <BurgerMenu />
       <main class="main">
-        <h1 class="setting-title">Cyberfootball site</h1>
+        <h1 class="setting-title">Сайт по киберфутболу</h1>
       </main>
     </div>
   </template>
