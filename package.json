@@ -15,5 +15,8 @@
   },
   "scripts": {
     "start": "webpack serve --mode development"
+  },
+  "dependencies": {
+    "vue-router": "^4.2.4"
   }
 }

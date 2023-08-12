@@ -8,18 +8,24 @@
       <div class="sidebar" :class="{ open: isSidebarOpen, minimized: isSidebarMinimized }">
         <div class="sidebar-links">
             <div class="sidebar-link">
-                <a href="#">Главная</a>
+              <router-link to="/">Главная</router-link>
             </div>
-            <a href="#">Турниры</a>
-            <a href="#">Контакты</a>
-            <a href="#">О нас</a>
+            <div class="sidebar-link">
+              <router-link to="/tournaments">Турниры</router-link>
+            </div>
+            <div class="sidebar-link">
+              <router-link to="/contacts">Контакты</router-link>
+            </div>
+            <div class="sidebar-link">
+              <router-link to="/about">О нас</router-link>
+            </div>
         </div>
       </div>
     </div>
   </template>
   
   <script>
-  import { ref, watch } from 'vue';
+  import { ref } from 'vue';
   
   export default {
     setup() {
