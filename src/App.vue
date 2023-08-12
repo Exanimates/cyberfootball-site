@@ -1,9 +1,7 @@
 <template>
     <div id="app">
       <BurgerMenu />
-      <main class="main">
-        <h1 class="setting-title">Сайт по киберфутболу</h1>
-      </main>
+      <router-view></router-view>
     </div>
   </template>
   
