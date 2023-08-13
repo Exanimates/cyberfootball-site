@@ -11,3 +11,6 @@ npm install
 ```
 npm run start
 ```
+
+## Публичный доступ
+https://cyberfootball-site-9bis.vercel.app/
