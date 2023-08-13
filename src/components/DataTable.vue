@@ -13,9 +13,9 @@
         </tbody>
       </table>
       <div class="pagination">
-        <button @click="goToPage(page - 1)" :disabled="page === 1">Предыдущая</button>
+        <button class="pagination__left" @click="goToPage(page - 1)" :disabled="page === 1">Предыдущая</button>
         <span>Страница {{ page }} из {{ totalPages }}</span>
-        <button @click="goToPage(page + 1)" :disabled="page === totalPages">Следующая</button>
+        <button class="pagination__right" @click="goToPage(page + 1)" :disabled="page === totalPages">Следующая</button>
       </div>
     </div>
   </template>
@@ -147,6 +147,13 @@
 
 .datatable tbody tr:last-child td {
   border-bottom: none;
+}
+
+.pagination__left {
+  margin-right: 10px;
+}
+.pagination__right {
+  margin-left: 10px;
 }
 </style>
   
