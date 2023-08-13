@@ -9,5 +9,5 @@ npm install
 ```
 ## Запуск проект
 ```
-npm run dev
+npm run start
 ```
