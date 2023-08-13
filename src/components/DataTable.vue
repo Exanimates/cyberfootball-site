@@ -85,39 +85,68 @@
   </script>
   
   <style scoped>
-  .datatable-container {
-    margin: 20px;
-    background-color: #111; /* неоновый цвет */
-    box-shadow: 0px 0px 10px #37e5ff; /* синяя тень */
-    border-radius: 10px; /* добавляем закругление */
-  }
-  
-  .datatable {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 10px;
-    border-radius: 10px; /* добавляем закругление */
-    color: white;
-  }
-  
-  .datatable th,
-  .datatable td {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 10px; /* добавляем закругление */
-  }
-  
-  .pagination {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.datatable-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
 
-  .pagination button {
-    color: white;
-  }
-  .pagination span {
-    color: white;
-  }
-  </style>
+.datatable {
+  width: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+  border-collapse: collapse;
+  box-shadow: 2px 2px 3px 0px #8526ab;
+  background-color: #ffffff;
+}
+
+.datatable th,
+.datatable td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+.datatable th {
+  background-color: #97c0f1;
+  font-weight: 600;
+}
+
+.datatable tr:hover {
+  background-color: #f0f0f0;
+  transition: background-color 0.2s;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.pagination-btn {
+  margin: 0 4px;
+  padding: 6px 12px;
+  background-color: #0074d9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.pagination-btn:hover {
+  background-color: #0056b3;
+}
+
+.page-info {
+  margin: 0 12px;
+  font-weight: 500;
+}
+
+.datatable tbody tr:last-child td {
+  border-bottom: none;
+}
+</style>
   
