@@ -22,7 +22,7 @@ export default {
 
     const tableData = [
       { Name: "Кубок", PlayersCount: 30 },
-      { Name: "Чемпиона", PlayersCount: 28 },
+      { Name: "Чемпионат", PlayersCount: 28 },
     ];
 
     return {
