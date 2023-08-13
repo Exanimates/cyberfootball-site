@@ -3,7 +3,6 @@
     <div class="tournaments__header">
       <h1>Турниры</h1>
     </div>
-    <!-- <DataTable width="700px" height="140px" :columns="tableColumns" :data="tableData" /> -->
     <TournamentList :tournaments="tournamentData" width="800px"/>
   </div>
 </template>
@@ -18,16 +17,6 @@ export default {
     TournamentList
   },
   setup() {
-    // const tableColumns = [
-    //   { label: "Имя турнира", key: "Name" },
-    //   { label: "Кол-во участников", key: "PlayersCount" },
-    // ];
-
-    // const tableData = [
-    //   { Name: "Кубок", PlayersCount: 30 },
-    //   { Name: "Чемпионат", PlayersCount: 28 },
-    // ];
-
     const tournamentData = [
         {
           name: "Кубок кубков",
