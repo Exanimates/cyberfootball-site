@@ -124,7 +124,7 @@ body {
 		width: @width1;
 	}
 	&:nth-of-type(odd) {
-		after {
+		&:after {
 			border-right-style: solid;
 			border-top-style: solid;
 			height: @height0;
@@ -132,7 +132,7 @@ body {
 		}
 	}
 	&:nth-of-type(even) {
-		after {
+		&:after {
 			border-bottom-style: solid;
 			border-right-style: solid;
 			height: @height0;
