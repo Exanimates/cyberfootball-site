@@ -4,16 +4,20 @@
       <h1>Турниры</h1>
     </div>
     <TournamentList :tournaments="tournamentData" width="800px"/>
+    <TournamentStage
+      :stages="stage"
+    />
   </div>
 </template>
 
 <script>
-import DataTable from "../components/DataTable.vue";
 import TournamentList from "../components/TournamentList.vue";
+import TournamentStage from '../components/TournamentStage.vue';
+
 
 export default {
   components: {
-    DataTable,
+    TournamentStage,
     TournamentList
   },
   setup() {
@@ -44,8 +48,48 @@ export default {
         },
       ];
 
+      const stage = [
+      {
+          title: "1/8",
+          matches: [
+            { teamA: "Двор1", teamB: "C2", time: "14:00" },
+            { teamA: "Двор2", teamB: "3BEF", time: "20:00" },
+            { teamA: "Двор3", teamB: "3BEF", time: "20:00" },
+            { teamA: "Двор4", teamB: "3BEF", time: "20:00" },
+            { teamA: "Двор5", teamB: "C2", time: "14:00" },
+            { teamA: "Двор6", teamB: "3BEF", time: "20:00" },
+            { teamA: "Двор7", teamB: "3BEF", time: "20:00" },
+            { teamA: "Двор8", teamB: "3BEF", time: "20:00" },
+          ],
+        },
+        {
+          title: "1/4",
+          matches: [
+            { teamA: "", teamB: "", time: "14:00" },
+            { teamA: "", teamB: "", time: "20:00" },
+            { teamA: "", teamB: "", time: "20:00" },
+            { teamA: "", teamB: "", time: "20:00" },
+          ],
+        },
+        {
+          title: "1/2",
+          matches: [
+            { teamA: "", teamB: "", time: "20:00" },
+            { teamA: "", teamB: "", time: "20:00" },
+          ],
+        },
+        {
+          title: "Final",
+          matches: [
+            { teamA: "", teamB: "", time: "20:00" },
+          ],
+        },
+      ]
+
+
     return {
       tournamentData,
+      stage
     };
   },
 };
