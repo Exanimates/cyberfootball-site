@@ -109,12 +109,15 @@
 }
 
 .datatable th {
-  background-color: #97c0f1;
+  background-color: #bddbff;
   font-weight: 600;
 }
 
+.datatable tr {
+  background-color: white;
+}
 .datatable tr:hover {
-  background-color: #f0f0f0;
+  background-color: #B7B7B7;
   transition: background-color 0.2s;
 }
 

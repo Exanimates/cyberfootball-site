@@ -1,7 +1,7 @@
 <template>
     <div class="home">
       <div class="home__header">
-        <h1>Сайт посвещенный киберфутболу</h1>
+        <h1>Сайт посвященный киберфутболу</h1>
       </div>
       <div class="home__body">
         <DataTable class="home__datatable" width="700px" height="140px" :columns="tableColumns" :data="tableData" />
@@ -77,6 +77,13 @@
   .home__header {
     display: flex;
     justify-content: center;
+
+    color: white;
+    text-transform: uppercase;
+
+    font-family: math;
+
+    font-size: 20px;
   }
   .home__datatable {
     margin-left: 50px;

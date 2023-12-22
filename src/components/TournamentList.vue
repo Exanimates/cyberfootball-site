@@ -51,6 +51,7 @@
     overflow: hidden;
     box-shadow: 2px 2px 3px 0px #392fd1;
     padding: 25px;
+    background-color: white;
   }
   
   .tournament-wrapper {

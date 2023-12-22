@@ -75,10 +75,11 @@
   }
   
   .burger-button.active .burger-line {
-    background-color: #37e5ff; /* Цвет неоновой подсветки */
+    background-color: #E06215; /* Цвет неоновой подсветки */
   }
   
   .sidebar {
+    font: -webkit-control;
     position: fixed;
     top: 0;
     left: 0;
@@ -92,7 +93,7 @@
     overflow-x: hidden; /* Скрываем горизонтальный скролл, если контент меню больше ширины */
 
     border-radius: 0px 10px 10px 0px;
-    box-shadow: 10px 5px 5px #8a10db;
+    box-shadow: 10px 5px 5px #E06215;
   }
   
   .sidebar.open {
@@ -121,9 +122,14 @@
   }
   
   .sidebar-links a {
+    font-family: monospace;
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 25px
+  }
+
+  .sidebar-link {
+    margin-top: 15px;
   }
   
   .sidebar-links a:hover {

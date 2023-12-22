@@ -106,5 +106,10 @@ export default {
 .tournaments__header {
   display: flex;
   justify-content: center;
+
+  color: white;
+  text-transform: uppercase;
+  font-family: math;
+  font-size: 20px;
 }
 </style>

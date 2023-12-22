@@ -34,7 +34,7 @@
   <style lang="less" scoped>
 // Color variables (appears count calculates by raw css)
 @color0: #cccccc; // Appears 3 times
-@color1: #4f7a38; // Appears 2 times
+@color1: #f13e3e; // Appears 2 times
 
 // Width variables (appears count calculates by raw css)
 @width1: 10px; // Appears 2 times
@@ -55,6 +55,7 @@ body {
 	margin: 0;
 }
 .tournament-headers {
+	background: #ff8f4bd4;
 	border-bottom: 1px solid @color0;
 	display: flex;
 	flex-direction: row;
@@ -75,6 +76,8 @@ body {
 	flex-direction: row;
 	list-style-type: none;
 	margin-bottom: 50px;
+
+	background: rgb(42 146 223 / 23%);;
 }
 .bracket {
 	border-right: 1px dashed @color0;
@@ -106,7 +109,7 @@ body {
 	}
 }
 .team-item {
-	background-color: #f4f4f4;
+	background: #c399f9cf;
 	display: block;
 	line-height: 2;
 	margin: 0.5rem 10px;

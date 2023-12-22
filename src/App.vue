@@ -21,5 +21,10 @@
     display: flex;
     justify-content: center;
   }
+
+  body {
+    background-image: url('../src/images/shutterstock_269715800_2.jpg');
+    background-size: 1920px 1080px;
+  }
   </style>
   
